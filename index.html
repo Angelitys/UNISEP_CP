@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mensagem Simples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .mensagem {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 520px;
+    }
+    .mensagem h1 { 
+      color: #333; 
+      margin-bottom: 10px; 
+    }
+    .mensagem p { 
+      color: #666; 
+    }
+    .avatar {
+      width: 140px;         
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    }
+  </style>
+</head>
+
+<body>
+    
+  <div class="mensagem">
+    <img
+      class="avatar"
+      alt="Foto/ícone"
+      src="data:image/png;base64,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" />
+    <h1>Olá, sou o Angelo!</h1>
+    <p>Faço ADS, sou garoto de programa! 😃</p>
+  </div>
+
+</body>
+</html>
